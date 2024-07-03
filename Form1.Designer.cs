@@ -3,12 +3,14 @@
     partial class Form1
     {
 
+
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-
+        private System.Windows.Forms.WebBrowser webBrowserChat;
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
@@ -31,6 +33,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            webViewChat = new Microsoft.Web.WebView2.WinForms.WebView2();
+            gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             Title = new Label();
             CountryA = new Button();
             pictureBox1 = new PictureBox();
@@ -75,7 +79,8 @@
             pictureBox26 = new PictureBox();
             pictureBox27 = new PictureBox();
             pictureBox28 = new PictureBox();
-            gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            ((System.ComponentModel.ISupportInitialize)webViewChat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -102,7 +107,47 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
+            // 
+            // webViewChat
+            // 
+            webViewChat.AllowExternalDrop = true;
+            webViewChat.CreationProperties = null;
+            webViewChat.DefaultBackgroundColor = Color.White;
+            webViewChat.Dock = DockStyle.Fill;
+            webViewChat.Location = new Point(0, 0);
+            webViewChat.Name = "webViewChat";
+            webViewChat.Size = new Size(800, 450);
+            webViewChat.TabIndex = 0;
+            webViewChat.ZoomFactor = 1D;
+            // 
+            // gMapControl1
+            // 
+            gMapControl1.Bearing = 0F;
+            gMapControl1.CanDragMap = true;
+            gMapControl1.EmptyTileColor = Color.Navy;
+            gMapControl1.GrayScaleMode = false;
+            gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            gMapControl1.LevelsKeepInMemory = 5;
+            gMapControl1.Location = new Point(851, 83);
+            gMapControl1.MarkersEnabled = true;
+            gMapControl1.MaxZoom = 2;
+            gMapControl1.MinZoom = 2;
+            gMapControl1.MouseWheelZoomEnabled = true;
+            gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            gMapControl1.Name = "gMapControl1";
+            gMapControl1.NegativeMode = false;
+            gMapControl1.PolygonsEnabled = true;
+            gMapControl1.RetryLoadTile = 0;
+            gMapControl1.RoutesEnabled = true;
+            gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            gMapControl1.SelectedAreaFillColor = Color.FromArgb(33, 65, 105, 225);
+            gMapControl1.ShowTileGridLines = false;
+            gMapControl1.Size = new Size(990, 642);
+            gMapControl1.TabIndex = 46;
+            gMapControl1.Zoom = 0D;
+            gMapControl1.Load += gMapControl1_Load;
             // 
             // Title
             // 
@@ -608,32 +653,17 @@
             pictureBox28.TabIndex = 45;
             pictureBox28.TabStop = false;
             // 
-            // gMapControl1
+            // webView21
             // 
-            gMapControl1.Bearing = 0F;
-            gMapControl1.CanDragMap = true;
-            gMapControl1.EmptyTileColor = Color.Navy;
-            gMapControl1.GrayScaleMode = false;
-            gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            gMapControl1.LevelsKeepInMemory = 5;
-            gMapControl1.Location = new Point(851, 83);
-            gMapControl1.MarkersEnabled = true;
-            gMapControl1.MaxZoom = 2;
-            gMapControl1.MinZoom = 2;
-            gMapControl1.MouseWheelZoomEnabled = true;
-            gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            gMapControl1.Name = "gMapControl1";
-            gMapControl1.NegativeMode = false;
-            gMapControl1.PolygonsEnabled = true;
-            gMapControl1.RetryLoadTile = 0;
-            gMapControl1.RoutesEnabled = true;
-            gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            gMapControl1.SelectedAreaFillColor = Color.FromArgb(33, 65, 105, 225);
-            gMapControl1.ShowTileGridLines = false;
-            gMapControl1.Size = new Size(990, 642);
-            gMapControl1.TabIndex = 46;
-            gMapControl1.Zoom = 0D;
-            gMapControl1.Load += gMapControl1_Load;
+            webView21.AllowExternalDrop = true;
+            webView21.CreationProperties = null;
+            webView21.DefaultBackgroundColor = Color.White;
+            webView21.Location = new Point(761, 882);
+            webView21.Name = "webView21";
+            webView21.Size = new Size(629, 116);
+            webView21.TabIndex = 47;
+            webView21.ZoomFactor = 1D;
+            webView21.Click += webView21_Click;
             // 
             // Form1
             // 
@@ -643,6 +673,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(webView21);
             Controls.Add(gMapControl1);
             Controls.Add(pictureBox28);
             Controls.Add(pictureBox27);
@@ -691,6 +722,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)webViewChat).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -717,6 +749,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
+            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
         }
 
@@ -767,5 +800,6 @@
         private PictureBox pictureBox27;
         private PictureBox pictureBox28;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
     }
 }

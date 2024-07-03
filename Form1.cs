@@ -2,8 +2,11 @@ using EuroExplorer.Models;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET;
+using Microsoft.Web.WebView2.WinForms;
 using Newtonsoft.Json;
 using System;
+using System.Diagnostics;
+using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,11 +17,54 @@ namespace EuroExplorer
     {
         private User user;
         private User loggedInUser;
+        private Process flaskProcess;
+        private WebView2 webViewChat;
 
         public Form1(User user)
         {
             InitializeComponent();
             this.user = user;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            StartFlaskServer();
+
+            webViewChat.Source = new Uri("http://127.0.0.1:5000/");
+        }
+
+        private void StartFlaskServer()
+        {
+            var start = new ProcessStartInfo
+            {
+                FileName = "python",
+                Arguments = "app.py",
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                CreateNoWindow = true,
+                WorkingDirectory = Path.GetDirectoryName(Application.ExecutablePath)
+            };
+
+            flaskProcess = new Process
+            {
+                StartInfo = start
+            };
+            flaskProcess.OutputDataReceived += (sender, args) => Console.WriteLine(args.Data);
+            flaskProcess.ErrorDataReceived += (sender, args) => Console.WriteLine(args.Data);
+            flaskProcess.Start();
+            flaskProcess.BeginOutputReadLine();
+            flaskProcess.BeginErrorReadLine();
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            base.OnFormClosed(e);
+            if (flaskProcess != null && !flaskProcess.HasExited)
+            {
+                flaskProcess.Kill();
+                flaskProcess.Dispose();
+            }
         }
 
         private async Task<string> GetCountryFromCoordinatesAsync(double lat, double lng)
@@ -288,6 +334,11 @@ namespace EuroExplorer
             FormW f46 = new FormW(loggedInUser);
             f46.Show();
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void webView21_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
