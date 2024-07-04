@@ -69,10 +69,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
-            },
-            "WebView2.Runtime.X64": {
-              "target": "Package",
-              "version": "[126.0.2592.87, )"
             }
           },
           "imports": [

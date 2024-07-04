@@ -3,6 +3,7 @@ using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET;
 using Microsoft.Web.WebView2.WinForms;
+using Microsoft.Web.WebView2.Core;
 using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
@@ -24,6 +25,8 @@ namespace EuroExplorer
         {
             InitializeComponent();
             this.user = user;
+
+            webViewChat = new WebView2();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -338,7 +341,17 @@ namespace EuroExplorer
 
         private void webView21_Click(object sender, EventArgs e)
         {
+            StartFlaskServer();
 
+            // Assuming you want to set the source to webViewChat like in the Form1_Load method
+            webViewChat.Source = new Uri("http://127.0.0.1:5000/");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu1 f47 = new Menu1(loggedInUser);
+            f47.Show();
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

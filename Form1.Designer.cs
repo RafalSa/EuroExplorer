@@ -10,7 +10,6 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        private System.Windows.Forms.WebBrowser webBrowserChat;
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
@@ -80,6 +79,7 @@
             pictureBox27 = new PictureBox();
             pictureBox28 = new PictureBox();
             webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)webViewChat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -656,6 +656,7 @@
             // webView21
             // 
             webView21.AllowExternalDrop = true;
+            webView21.BackColor = Color.White;
             webView21.CreationProperties = null;
             webView21.DefaultBackgroundColor = Color.White;
             webView21.Location = new Point(761, 882);
@@ -665,6 +666,16 @@
             webView21.ZoomFactor = 1D;
             webView21.Click += webView21_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(544, 895);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 48;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -673,6 +684,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(button1);
             Controls.Add(webView21);
             Controls.Add(gMapControl1);
             Controls.Add(pictureBox28);
@@ -801,5 +813,6 @@
         private PictureBox pictureBox28;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private Button button1;
     }
 }
