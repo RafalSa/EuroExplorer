@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu1));
             panel1 = new Panel();
-            ListaPanel = new Button();
-            ListaPanstw = new Button();
-            Map = new Button();
             Czat = new Button();
+            Map = new Button();
+            ListaPanstw = new Button();
+            ListaPanel = new Button();
+            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -49,6 +51,36 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
+            // Czat
+            // 
+            Czat.Location = new Point(17, 212);
+            Czat.Name = "Czat";
+            Czat.Size = new Size(171, 38);
+            Czat.TabIndex = 4;
+            Czat.Text = "Czat";
+            Czat.UseVisualStyleBackColor = true;
+            Czat.Click += Czat_Click;
+            // 
+            // Map
+            // 
+            Map.Location = new Point(17, 150);
+            Map.Name = "Map";
+            Map.Size = new Size(171, 38);
+            Map.TabIndex = 3;
+            Map.Text = "Mapa";
+            Map.UseVisualStyleBackColor = true;
+            Map.Click += Map_Click;
+            // 
+            // ListaPanstw
+            // 
+            ListaPanstw.Location = new Point(17, 88);
+            ListaPanstw.Name = "ListaPanstw";
+            ListaPanstw.Size = new Size(171, 38);
+            ListaPanstw.TabIndex = 2;
+            ListaPanstw.Text = "Lista Państw";
+            ListaPanstw.UseVisualStyleBackColor = true;
+            ListaPanstw.Click += ListaPanstw_Click;
+            // 
             // ListaPanel
             // 
             ListaPanel.BackColor = Color.Transparent;
@@ -61,46 +93,30 @@
             ListaPanel.UseVisualStyleBackColor = false;
             ListaPanel.Click += ListaPanel_Click;
             // 
-            // ListaPanstw
+            // webView21
             // 
-            ListaPanstw.Location = new Point(17, 88);
-            ListaPanstw.Name = "ListaPanstw";
-            ListaPanstw.Size = new Size(171, 38);
-            ListaPanstw.TabIndex = 2;
-            ListaPanstw.Text = "Lista Państw";
-            ListaPanstw.UseVisualStyleBackColor = true;
-            ListaPanstw.Click += ListaPanstw_Click;
-            // 
-            // Map
-            // 
-            Map.Location = new Point(17, 150);
-            Map.Name = "Map";
-            Map.Size = new Size(171, 38);
-            Map.TabIndex = 3;
-            Map.Text = "Mapa";
-            Map.UseVisualStyleBackColor = true;
-            Map.Click += Map_Click;
-            // 
-            // Czat
-            // 
-            Czat.Location = new Point(17, 212);
-            Czat.Name = "Czat";
-            Czat.Size = new Size(171, 38);
-            Czat.TabIndex = 4;
-            Czat.Text = "Czat";
-            Czat.UseVisualStyleBackColor = true;
-            Czat.Click += Czat_Click;
+            webView21.AllowExternalDrop = true;
+            webView21.CreationProperties = null;
+            webView21.DefaultBackgroundColor = Color.White;
+            webView21.Location = new Point(207, 12);
+            webView21.Name = "webView21";
+            webView21.Size = new Size(1685, 1017);
+            webView21.TabIndex = 2;
+            webView21.ZoomFactor = 1D;
+            webView21.Click += webView21_Click;
             // 
             // Menu1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(webView21);
             Controls.Add(ListaPanel);
             Controls.Add(panel1);
             Name = "Menu1";
             Text = "Menu";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
         }
 
@@ -111,5 +127,6 @@
         private Button Czat;
         private Button Map;
         private Button ListaPanstw;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
     }
 }
