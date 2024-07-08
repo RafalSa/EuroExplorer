@@ -29,8 +29,8 @@
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data); // Sprawdź, co jest zwracane przez endpoint
-                    if (data.logged_in) {
+                    console.log('Fetched user data:', data); // Debugging log
+                    if (data.logged_in && data.username) {
                         document.getElementById('welcomeMessage').textContent = `Witaj, ${data.username}!`;
                     } else {
                         document.getElementById('welcomeMessage').textContent = 'Witaj, UŻYTKOWNIK!';
@@ -42,18 +42,43 @@
                 });
         }
 
-        // Wywołanie funkcji fetchLoggedInUser() po załadowaniu strony
-        document.addEventListener('DOMContentLoaded', function () {
-            fetchLoggedInUser(); // Wywołaj funkcję do pobrania danych o użytkowniku po załadowaniu strony
+        // Funkcja do pobierania wiadomości z serwera
+        function fetchMessages() {
+            fetch('/get_messages')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const messageList = document.getElementById('messages');
+                    messageList.innerHTML = ''; // Czyścimy listę wiadomości
+                    data.messages.forEach(msg => {
+                        const li = document.createElement('li');
+                        li.textContent = `${msg.username}: ${msg.message}`;
+                        messageList.appendChild(li);
+                    });
+                })
+                .catch(error => {
+                    console.error('Błąd podczas pobierania wiadomości:', error);
+                });
+        }
+
+        // Wywołanie funkcji fetchLoggedInUser() i fetchMessages() po załadowaniu strony
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchLoggedInUser();
+            fetchMessages();
         });
 
         // Funkcja do wysyłania wiadomości
         function sendMessage() {
-            var message = document.getElementById("messageInput").value;
-            var messageList = document.getElementById("messages");
-            var li = document.createElement("li");
-            var username = document.getElementById("welcomeMessage").textContent.split(',')[0].substr(7).trim();
-            li.textContent = username + ": " + message;
+            const message = document.getElementById("messageInput").value;
+            const username = document.getElementById("welcomeMessage").textContent.split(',')[1].trim().slice(0, -1);
+            const messageList = document.getElementById("messages");
+            const li = document.createElement("li");
+
+            li.textContent = `${username}: ${message}`;
             messageList.appendChild(li);
 
             fetch('/send_message', {
@@ -65,7 +90,19 @@
                     username: username,
                     message: message
                 })
-            });
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Możemy dodać dodatkowe operacje tutaj po udanym wysłaniu wiadomości
+                })
+                .catch(error => {
+                    console.error('Błąd podczas wysyłania wiadomości:', error);
+                });
 
             // Czyszczenie pola tekstowego
             document.getElementById("messageInput").value = "";
