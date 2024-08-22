@@ -1,30 +1,25 @@
 ﻿using System;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Web.WebView2.Core;
-using Newtonsoft.Json;
 
 namespace EuroExplorer
 {
     public partial class Menu1 : Form
     {
         private Models.User loggedInUser;
-        private static readonly HttpClient client = new HttpClient();
 
         public Menu1(Models.User loggedInUser)
         {
+            if (loggedInUser == null)
+                throw new ArgumentNullException(nameof(loggedInUser), "Zalogowany użytkownik nie może być null");
+
             InitializeComponent();
             this.loggedInUser = loggedInUser;
-            InitializeWebView();
-        }
 
-        private async void InitializeWebView()
-        {
-            await webView21.EnsureCoreWebView2Async(null);
-            webView21.CoreWebView2.Navigate("file:///C:/Users/rafal/source/repos/projektObiektowe13/templates/index.html");
+            // Powiąż metodę Send_Click z wydarzeniem kliknięcia przycisku "Wyślij"
+            Send.Click += new EventHandler(Send_Click);
 
+            // Powiąż metodę MessageTextBox_KeyDown z wydarzeniem KeyDown pola tekstowego
+            Message.KeyDown += new KeyEventHandler(MessageTextBox_KeyDown);
         }
 
         private void ListaPanel_Click(object sender, EventArgs e)
@@ -54,9 +49,44 @@ namespace EuroExplorer
 
         private void webView21_Click(object sender, EventArgs e)
         {
-            // Obsługa kliknięcia na kontrolkę WebView2, jeśli jest potrzebna
+            // Obsługa kliknięcia na webView21, jeśli to potrzebne
         }
 
+        private void Chat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Obsługa zmiany wybranego elementu w Chat
+        }
 
+        private void Send_Click(object sender, EventArgs e)
+        {
+            if (loggedInUser == null)
+            {
+                MessageBox.Show("Błąd: użytkownik nie jest zalogowany.");
+                return;
+            }
+
+            string message = Message.Text.Trim();
+
+            if (!string.IsNullOrEmpty(message))
+            {
+                string formattedMessage = $"{loggedInUser.Username}: {message}";
+                Chat.Items.Add(formattedMessage);
+                Message.Clear();
+            }
+        }
+
+        private void MessageTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Send_Click(sender, e);
+                e.SuppressKeyPress = true; // Zapobiega dodaniu nowej linii w TextBox po naciśnięciu Enter
+            }
+        }
+
+        private void Message_TextChanged(object sender, EventArgs e)
+        {
+            // Obsługa zmiany tekstu w Message, jeśli to potrzebne
+        }
     }
 }

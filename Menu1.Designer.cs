@@ -34,9 +34,10 @@
             Map = new Button();
             ListaPanstw = new Button();
             ListaPanel = new Button();
-            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            Chat = new ListBox();
+            Send = new Button();
+            Message = new TextBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -93,31 +94,49 @@
             ListaPanel.UseVisualStyleBackColor = false;
             ListaPanel.Click += ListaPanel_Click;
             // 
-            // webView21
+            // Chat
             // 
-            webView21.AllowExternalDrop = true;
-            webView21.CreationProperties = null;
-            webView21.DefaultBackgroundColor = Color.White;
-            webView21.Location = new Point(207, 12);
-            webView21.Name = "webView21";
-            webView21.Size = new Size(1685, 1017);
-            webView21.TabIndex = 2;
-            webView21.ZoomFactor = 1D;
-            webView21.Click += webView21_Click;
+            Chat.FormattingEnabled = true;
+            Chat.ItemHeight = 15;
+            Chat.Location = new Point(207, 1);
+            Chat.Name = "Chat";
+            Chat.Size = new Size(1685, 919);
+            Chat.TabIndex = 2;
+            Chat.SelectedIndexChanged += Chat_SelectedIndexChanged;
+            // 
+            // Send
+            // 
+            Send.Location = new Point(1778, 939);
+            Send.Name = "Send";
+            Send.Size = new Size(114, 28);
+            Send.TabIndex = 3;
+            Send.Text = "Wyślij";
+            Send.UseVisualStyleBackColor = true;
+            Send.Click += Send_Click;
+            // 
+            // Message
+            // 
+            Message.Location = new Point(207, 939);
+            Message.Name = "Message";
+            Message.Size = new Size(1552, 23);
+            Message.TabIndex = 4;
+            Message.TextChanged += Message_TextChanged;
             // 
             // Menu1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1904, 1041);
-            Controls.Add(webView21);
+            Controls.Add(Message);
+            Controls.Add(Send);
+            Controls.Add(Chat);
             Controls.Add(ListaPanel);
             Controls.Add(panel1);
             Name = "Menu1";
             Text = "Menu";
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -127,6 +146,8 @@
         private Button Czat;
         private Button Map;
         private Button ListaPanstw;
-        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private ListBox Chat;
+        private Button Send;
+        private TextBox Message;
     }
 }
