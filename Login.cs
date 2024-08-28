@@ -45,7 +45,7 @@ namespace EuroExplorer
                     File.WriteAllText(loggedInUserPath, serializedData);
 
                     
-                    var mapForm = new Form1(user);
+                    var mapForm = new Menu1(user);
                     mapForm.Show();
                     this.Hide();
                 }

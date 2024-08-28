@@ -30,19 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu1));
             panel1 = new Panel();
+            BNB = new Button();
+            button1 = new Button();
             Czat = new Button();
             Map = new Button();
             ListaPanstw = new Button();
             ListaPanel = new Button();
-            Chat = new ListBox();
-            Send = new Button();
-            Message = new TextBox();
+            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(BNB);
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(Czat);
             panel1.Controls.Add(Map);
             panel1.Controls.Add(ListaPanstw);
@@ -51,6 +54,26 @@
             panel1.Size = new Size(206, 1048);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // BNB
+            // 
+            BNB.Location = new Point(17, 331);
+            BNB.Name = "BNB";
+            BNB.Size = new Size(171, 38);
+            BNB.TabIndex = 6;
+            BNB.Text = "Tanie noclegi";
+            BNB.UseVisualStyleBackColor = true;
+            BNB.Click += BNB_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(17, 272);
+            button1.Name = "button1";
+            button1.Size = new Size(171, 38);
+            button1.TabIndex = 5;
+            button1.Text = "Booking";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Czat
             // 
@@ -78,7 +101,7 @@
             ListaPanstw.Name = "ListaPanstw";
             ListaPanstw.Size = new Size(171, 38);
             ListaPanstw.TabIndex = 2;
-            ListaPanstw.Text = "Lista Państw";
+            ListaPanstw.Text = "Lista Państw oraz mapa";
             ListaPanstw.UseVisualStyleBackColor = true;
             ListaPanstw.Click += ListaPanstw_Click;
             // 
@@ -94,49 +117,31 @@
             ListaPanel.UseVisualStyleBackColor = false;
             ListaPanel.Click += ListaPanel_Click;
             // 
-            // Chat
+            // webView21
             // 
-            Chat.FormattingEnabled = true;
-            Chat.ItemHeight = 15;
-            Chat.Location = new Point(207, 1);
-            Chat.Name = "Chat";
-            Chat.Size = new Size(1685, 919);
-            Chat.TabIndex = 2;
-            Chat.SelectedIndexChanged += Chat_SelectedIndexChanged;
-            // 
-            // Send
-            // 
-            Send.Location = new Point(1778, 939);
-            Send.Name = "Send";
-            Send.Size = new Size(114, 28);
-            Send.TabIndex = 3;
-            Send.Text = "Wyślij";
-            Send.UseVisualStyleBackColor = true;
-            Send.Click += Send_Click;
-            // 
-            // Message
-            // 
-            Message.Location = new Point(207, 939);
-            Message.Name = "Message";
-            Message.Size = new Size(1552, 23);
-            Message.TabIndex = 4;
-            Message.TextChanged += Message_TextChanged;
+            webView21.AllowExternalDrop = true;
+            webView21.CreationProperties = null;
+            webView21.DefaultBackgroundColor = Color.White;
+            webView21.Location = new Point(207, 12);
+            webView21.Name = "webView21";
+            webView21.Size = new Size(1685, 984);
+            webView21.TabIndex = 2;
+            webView21.ZoomFactor = 1D;
+            webView21.Click += webView21_Click_1;
             // 
             // Menu1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1904, 1041);
-            Controls.Add(Message);
-            Controls.Add(Send);
-            Controls.Add(Chat);
             Controls.Add(ListaPanel);
             Controls.Add(panel1);
+            Controls.Add(webView21);
             Name = "Menu1";
             Text = "Menu";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -146,8 +151,8 @@
         private Button Czat;
         private Button Map;
         private Button ListaPanstw;
-        private ListBox Chat;
-        private Button Send;
-        private TextBox Message;
+        private Button button1;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private Button BNB;
     }
 }

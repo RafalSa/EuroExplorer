@@ -54,5 +54,6 @@ namespace EuroExplorer.Models
         {
             HomeLocation?.Remove(location);
         }
+
     }
 }

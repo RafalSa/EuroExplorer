@@ -78,7 +78,6 @@
             pictureBox26 = new PictureBox();
             pictureBox27 = new PictureBox();
             pictureBox28 = new PictureBox();
-            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)webViewChat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -107,7 +106,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
             // 
             // webViewChat
@@ -653,26 +651,13 @@
             pictureBox28.TabIndex = 45;
             pictureBox28.TabStop = false;
             // 
-            // webView21
-            // 
-            webView21.AllowExternalDrop = true;
-            webView21.BackColor = Color.White;
-            webView21.CreationProperties = null;
-            webView21.DefaultBackgroundColor = Color.White;
-            webView21.Location = new Point(761, 882);
-            webView21.Name = "webView21";
-            webView21.Size = new Size(629, 116);
-            webView21.TabIndex = 47;
-            webView21.ZoomFactor = 1D;
-            webView21.Click += webView21_Click;
-            // 
             // button1
             // 
-            button1.Location = new Point(544, 895);
+            button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(108, 36);
             button1.TabIndex = 48;
-            button1.Text = "button1";
+            button1.Text = "Powrót do menu";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -685,7 +670,6 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
             Controls.Add(button1);
-            Controls.Add(webView21);
             Controls.Add(gMapControl1);
             Controls.Add(pictureBox28);
             Controls.Add(pictureBox27);
@@ -761,7 +745,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
         }
 
@@ -812,7 +795,6 @@
         private PictureBox pictureBox27;
         private PictureBox pictureBox28;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
-        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
         private Button button1;
     }
 }
