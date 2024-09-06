@@ -37,6 +37,7 @@
             InfoAustria = new TextBox();
             InfoAustria1 = new TextBox();
             Back = new Button();
+            bookingAustria = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -134,6 +135,16 @@
             Back.UseVisualStyleBackColor = false;
             Back.Click += Back_Click;
             // 
+            // bookingAustria
+            // 
+            bookingAustria.Location = new Point(1058, 529);
+            bookingAustria.Name = "bookingAustria";
+            bookingAustria.Size = new Size(169, 62);
+            bookingAustria.TabIndex = 8;
+            bookingAustria.Text = "Noclegi Austria";
+            bookingAustria.UseVisualStyleBackColor = true;
+            bookingAustria.Click += bookingAustria_Click;
+            // 
             // Austria
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,6 +153,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(bookingAustria);
             Controls.Add(Back);
             Controls.Add(InfoAustria1);
             Controls.Add(InfoAustria);
@@ -167,5 +179,6 @@
         protected TextBox InfoAustria;
         protected TextBox InfoAustria1;
         private Button Back;
+        private Button bookingAustria;
     }
 }

@@ -153,5 +153,12 @@ namespace EuroExplorer
                 form1.Show();
             }
         }
+
+        private void bookingAustria_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(loggedInUser);
+            menu1.Show();
+            menu1.NavigateToBookingAustria();
+        }
     }
 }
