@@ -117,7 +117,114 @@ namespace EuroExplorer
 
         }
 
+        public async void NavigateToBookingWiedeń()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/at/vienna.pl.html");
 
 
+        }
+
+        public async void NavigateToBookingSalzburg()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/at/salzburg.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingInnsbruck()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/at/innsbruck.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingHallstatt_i_region_Salzkammergut()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/at/hallstatt.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingTyrol()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/region/at/tirol.pl.html");
+
+
+        }
     }
 }

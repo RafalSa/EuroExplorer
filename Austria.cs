@@ -160,5 +160,40 @@ namespace EuroExplorer
             menu1.Show();
             menu1.NavigateToBookingAustria();
         }
+
+        private void Wieden_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(loggedInUser);
+            menu1.Show();
+            menu1.NavigateToBookingWiedeń();
+        }
+
+        private void Salzburg_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(loggedInUser);
+            menu1.Show();
+            menu1.NavigateToBookingSalzburg();
+        }
+
+        private void Innsbruck_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(loggedInUser);
+            menu1.Show();
+            menu1.NavigateToBookingInnsbruck();
+        }
+
+        private void Hallstatt_i_region_Salzkammergut_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(loggedInUser);
+            menu1.Show();
+            menu1.NavigateToBookingHallstatt_i_region_Salzkammergut();
+        }
+
+        private void Tyrol_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(loggedInUser);
+            menu1.Show();
+            menu1.NavigateToBookingTyrol();
+        }
     }
 }
