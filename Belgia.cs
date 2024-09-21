@@ -16,7 +16,7 @@ namespace EuroExplorer
 {
     public partial class Belgia : Form
     {
-        private User user; 
+        private User user;
 
         public Belgia(User user)
         {
@@ -136,9 +136,51 @@ namespace EuroExplorer
 
             if (!formBOpen)
             {
-                Form1 form1 = new Form1(user); 
+                Form1 form1 = new Form1(user);
                 form1.Show();
             }
+        }
+
+        private void bookingBelgia_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingBelgia();
+        }
+
+        private void Bruksela_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingBruksela();
+        }
+
+        private void Brugia_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingBrugia();
+        }
+
+        private void Antwerpia_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingAntwerpia();
+        }
+
+        private void Gandawa_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingGandawa();
+        }
+
+        private void Ardeny_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingArdeny();
         }
     }
 }
