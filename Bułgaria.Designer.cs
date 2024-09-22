@@ -148,7 +148,7 @@
             Rilskie_Gory_i_Monastyr_Rilski_booking.AutoSize = true;
             Rilskie_Gory_i_Monastyr_Rilski_booking.BackColor = Color.White;
             Rilskie_Gory_i_Monastyr_Rilski_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Rilskie_Gory_i_Monastyr_Rilski_booking.Location = new Point(73, 900);
+            Rilskie_Gory_i_Monastyr_Rilski_booking.Location = new Point(1490, 698);
             Rilskie_Gory_i_Monastyr_Rilski_booking.Name = "Rilskie_Gory_i_Monastyr_Rilski_booking";
             Rilskie_Gory_i_Monastyr_Rilski_booking.Size = new Size(301, 30);
             Rilskie_Gory_i_Monastyr_Rilski_booking.TabIndex = 44;
@@ -161,7 +161,7 @@
             Bansko_booking.AutoSize = true;
             Bansko_booking.BackColor = Color.White;
             Bansko_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Bansko_booking.Location = new Point(72, 853);
+            Bansko_booking.Location = new Point(1489, 651);
             Bansko_booking.Name = "Bansko_booking";
             Bansko_booking.Size = new Size(84, 30);
             Bansko_booking.TabIndex = 43;
@@ -174,7 +174,7 @@
             Warna_booking.AutoSize = true;
             Warna_booking.BackColor = Color.White;
             Warna_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Warna_booking.Location = new Point(73, 803);
+            Warna_booking.Location = new Point(1490, 601);
             Warna_booking.Name = "Warna_booking";
             Warna_booking.Size = new Size(76, 30);
             Warna_booking.TabIndex = 42;
@@ -187,7 +187,7 @@
             Plowdiw_booking.AutoSize = true;
             Plowdiw_booking.BackColor = Color.White;
             Plowdiw_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Plowdiw_booking.Location = new Point(73, 757);
+            Plowdiw_booking.Location = new Point(1490, 555);
             Plowdiw_booking.Name = "Plowdiw_booking";
             Plowdiw_booking.Size = new Size(99, 30);
             Plowdiw_booking.TabIndex = 41;
@@ -201,7 +201,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label8.ForeColor = SystemColors.Menu;
-            label8.Location = new Point(12, 898);
+            label8.Location = new Point(1429, 696);
             label8.Name = "label8";
             label8.Size = new Size(35, 32);
             label8.TabIndex = 40;
@@ -213,7 +213,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label6.ForeColor = SystemColors.Menu;
-            label6.Location = new Point(12, 851);
+            label6.Location = new Point(1429, 649);
             label6.Name = "label6";
             label6.Size = new Size(35, 32);
             label6.TabIndex = 39;
@@ -225,7 +225,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label7.ForeColor = SystemColors.Menu;
-            label7.Location = new Point(12, 801);
+            label7.Location = new Point(1429, 599);
             label7.Name = "label7";
             label7.Size = new Size(35, 32);
             label7.TabIndex = 38;
@@ -237,7 +237,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label5.ForeColor = SystemColors.Menu;
-            label5.Location = new Point(12, 755);
+            label5.Location = new Point(1429, 553);
             label5.Name = "label5";
             label5.Size = new Size(35, 32);
             label5.TabIndex = 37;
@@ -249,7 +249,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label4.ForeColor = SystemColors.Menu;
-            label4.Location = new Point(12, 705);
+            label4.Location = new Point(1429, 503);
             label4.Name = "label4";
             label4.Size = new Size(35, 32);
             label4.TabIndex = 36;
@@ -261,7 +261,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label3.ForeColor = SystemColors.Menu;
-            label3.Location = new Point(12, 623);
+            label3.Location = new Point(1429, 421);
             label3.Name = "label3";
             label3.Size = new Size(389, 64);
             label3.TabIndex = 35;
@@ -272,7 +272,7 @@
             Sofia_booking.AutoSize = true;
             Sofia_booking.BackColor = Color.White;
             Sofia_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Sofia_booking.Location = new Point(73, 707);
+            Sofia_booking.Location = new Point(1490, 505);
             Sofia_booking.Name = "Sofia_booking";
             Sofia_booking.Size = new Size(63, 30);
             Sofia_booking.TabIndex = 34;

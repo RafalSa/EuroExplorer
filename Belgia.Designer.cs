@@ -148,7 +148,7 @@
             Ardeny_booking.AutoSize = true;
             Ardeny_booking.BackColor = Color.White;
             Ardeny_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Ardeny_booking.Location = new Point(73, 959);
+            Ardeny_booking.Location = new Point(1490, 704);
             Ardeny_booking.Name = "Ardeny_booking";
             Ardeny_booking.Size = new Size(84, 30);
             Ardeny_booking.TabIndex = 33;
@@ -161,7 +161,7 @@
             Gandawa_booking.AutoSize = true;
             Gandawa_booking.BackColor = Color.White;
             Gandawa_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Gandawa_booking.Location = new Point(72, 912);
+            Gandawa_booking.Location = new Point(1489, 657);
             Gandawa_booking.Name = "Gandawa_booking";
             Gandawa_booking.Size = new Size(104, 30);
             Gandawa_booking.TabIndex = 32;
@@ -174,7 +174,7 @@
             Antwerpia_booking.AutoSize = true;
             Antwerpia_booking.BackColor = Color.White;
             Antwerpia_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Antwerpia_booking.Location = new Point(73, 862);
+            Antwerpia_booking.Location = new Point(1490, 607);
             Antwerpia_booking.Name = "Antwerpia_booking";
             Antwerpia_booking.Size = new Size(115, 30);
             Antwerpia_booking.TabIndex = 31;
@@ -187,7 +187,7 @@
             Brugia_booking.AutoSize = true;
             Brugia_booking.BackColor = Color.White;
             Brugia_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Brugia_booking.Location = new Point(73, 816);
+            Brugia_booking.Location = new Point(1490, 561);
             Brugia_booking.Name = "Brugia_booking";
             Brugia_booking.Size = new Size(77, 30);
             Brugia_booking.TabIndex = 30;
@@ -201,7 +201,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label8.ForeColor = SystemColors.Menu;
-            label8.Location = new Point(12, 957);
+            label8.Location = new Point(1429, 702);
             label8.Name = "label8";
             label8.Size = new Size(35, 32);
             label8.TabIndex = 29;
@@ -213,7 +213,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label6.ForeColor = SystemColors.Menu;
-            label6.Location = new Point(12, 910);
+            label6.Location = new Point(1429, 655);
             label6.Name = "label6";
             label6.Size = new Size(35, 32);
             label6.TabIndex = 28;
@@ -225,7 +225,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label7.ForeColor = SystemColors.Menu;
-            label7.Location = new Point(12, 860);
+            label7.Location = new Point(1429, 605);
             label7.Name = "label7";
             label7.Size = new Size(35, 32);
             label7.TabIndex = 27;
@@ -237,7 +237,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label5.ForeColor = SystemColors.Menu;
-            label5.Location = new Point(12, 814);
+            label5.Location = new Point(1429, 559);
             label5.Name = "label5";
             label5.Size = new Size(35, 32);
             label5.TabIndex = 26;
@@ -249,7 +249,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label4.ForeColor = SystemColors.Menu;
-            label4.Location = new Point(12, 764);
+            label4.Location = new Point(1429, 509);
             label4.Name = "label4";
             label4.Size = new Size(35, 32);
             label4.TabIndex = 25;
@@ -261,7 +261,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label3.ForeColor = SystemColors.Menu;
-            label3.Location = new Point(12, 682);
+            label3.Location = new Point(1429, 427);
             label3.Name = "label3";
             label3.Size = new Size(389, 64);
             label3.TabIndex = 24;
@@ -272,7 +272,7 @@
             Bruksela_booking.AutoSize = true;
             Bruksela_booking.BackColor = Color.White;
             Bruksela_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Bruksela_booking.Location = new Point(73, 766);
+            Bruksela_booking.Location = new Point(1490, 511);
             Bruksela_booking.Name = "Bruksela_booking";
             Bruksela_booking.Size = new Size(96, 30);
             Bruksela_booking.TabIndex = 23;

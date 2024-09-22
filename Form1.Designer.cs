@@ -79,6 +79,7 @@
             pictureBox27 = new PictureBox();
             pictureBox28 = new PictureBox();
             button1 = new Button();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)webViewChat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -106,6 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // webViewChat
@@ -661,6 +663,17 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(95, 330);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(32, 31);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 49;
+            pictureBox6.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -669,6 +682,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(pictureBox6);
             Controls.Add(button1);
             Controls.Add(gMapControl1);
             Controls.Add(pictureBox28);
@@ -745,6 +759,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -796,5 +811,6 @@
         private PictureBox pictureBox28;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private Button button1;
+        private PictureBox pictureBox6;
     }
 }

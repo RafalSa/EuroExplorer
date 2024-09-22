@@ -161,7 +161,7 @@
             Wieden_booking.AutoSize = true;
             Wieden_booking.BackColor = Color.White;
             Wieden_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Wieden_booking.Location = new Point(73, 745);
+            Wieden_booking.Location = new Point(1490, 486);
             Wieden_booking.Name = "Wieden_booking";
             Wieden_booking.Size = new Size(88, 30);
             Wieden_booking.TabIndex = 9;
@@ -175,7 +175,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label3.ForeColor = SystemColors.Menu;
-            label3.Location = new Point(12, 661);
+            label3.Location = new Point(1429, 402);
             label3.Name = "label3";
             label3.Size = new Size(389, 64);
             label3.TabIndex = 10;
@@ -187,7 +187,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label4.ForeColor = SystemColors.Menu;
-            label4.Location = new Point(12, 743);
+            label4.Location = new Point(1429, 484);
             label4.Name = "label4";
             label4.Size = new Size(35, 32);
             label4.TabIndex = 11;
@@ -199,7 +199,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label5.ForeColor = SystemColors.Menu;
-            label5.Location = new Point(12, 793);
+            label5.Location = new Point(1429, 534);
             label5.Name = "label5";
             label5.Size = new Size(35, 32);
             label5.TabIndex = 12;
@@ -211,7 +211,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label6.ForeColor = SystemColors.Menu;
-            label6.Location = new Point(12, 889);
+            label6.Location = new Point(1429, 630);
             label6.Name = "label6";
             label6.Size = new Size(35, 32);
             label6.TabIndex = 14;
@@ -223,7 +223,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label7.ForeColor = SystemColors.Menu;
-            label7.Location = new Point(12, 839);
+            label7.Location = new Point(1429, 580);
             label7.Name = "label7";
             label7.Size = new Size(35, 32);
             label7.TabIndex = 13;
@@ -235,7 +235,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label8.ForeColor = SystemColors.Menu;
-            label8.Location = new Point(12, 936);
+            label8.Location = new Point(1429, 677);
             label8.Name = "label8";
             label8.Size = new Size(35, 32);
             label8.TabIndex = 15;
@@ -246,7 +246,7 @@
             Salzburg_booking.AutoSize = true;
             Salzburg_booking.BackColor = Color.White;
             Salzburg_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Salzburg_booking.Location = new Point(73, 795);
+            Salzburg_booking.Location = new Point(1490, 536);
             Salzburg_booking.Name = "Salzburg_booking";
             Salzburg_booking.Size = new Size(99, 30);
             Salzburg_booking.TabIndex = 16;
@@ -259,7 +259,7 @@
             Innsbruck_booking.AutoSize = true;
             Innsbruck_booking.BackColor = Color.White;
             Innsbruck_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Innsbruck_booking.Location = new Point(73, 841);
+            Innsbruck_booking.Location = new Point(1490, 582);
             Innsbruck_booking.Name = "Innsbruck_booking";
             Innsbruck_booking.Size = new Size(111, 30);
             Innsbruck_booking.TabIndex = 17;
@@ -272,7 +272,7 @@
             Hallstatt_i_region_Salzkammergut_booking.AutoSize = true;
             Hallstatt_i_region_Salzkammergut_booking.BackColor = Color.White;
             Hallstatt_i_region_Salzkammergut_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Hallstatt_i_region_Salzkammergut_booking.Location = new Point(72, 891);
+            Hallstatt_i_region_Salzkammergut_booking.Location = new Point(1489, 632);
             Hallstatt_i_region_Salzkammergut_booking.Name = "Hallstatt_i_region_Salzkammergut_booking";
             Hallstatt_i_region_Salzkammergut_booking.Size = new Size(337, 30);
             Hallstatt_i_region_Salzkammergut_booking.TabIndex = 18;
@@ -285,7 +285,7 @@
             Tyrol_booking.AutoSize = true;
             Tyrol_booking.BackColor = Color.White;
             Tyrol_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            Tyrol_booking.Location = new Point(73, 938);
+            Tyrol_booking.Location = new Point(1490, 679);
             Tyrol_booking.Name = "Tyrol_booking";
             Tyrol_booking.Size = new Size(62, 30);
             Tyrol_booking.TabIndex = 19;
