@@ -15,7 +15,7 @@ namespace EuroExplorer
 {
     public partial class Finlandia : Form
     {
-        
+
         private User user;
         public Finlandia(User user)
         {
@@ -152,6 +152,48 @@ namespace EuroExplorer
                 Form1 form1 = new Form1(user);
                 form1.Show();
             }
+        }
+
+        private void bookingFinlandia_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingFinlandia();
+        }
+
+        private void Helsinki_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingHelsinki();
+        }
+
+        private void Rovaniemi_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingRovaniemi();
+        }
+
+        private void Turku_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingTurku();
+        }
+
+        private void Tampere_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingTampere();
+        }
+
+        private void Wyspy_Alandzkie_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingWyspyAlandzkie();
         }
     }
 }

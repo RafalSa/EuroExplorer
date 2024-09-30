@@ -16,7 +16,7 @@ namespace EuroExplorer
     public partial class Estonia : Form
     {
         private User user;
-        public Estonia (User user)
+        public Estonia(User user)
         {
             InitializeComponent();
             this.user = user;
@@ -151,6 +151,48 @@ namespace EuroExplorer
                 Form1 form1 = new Form1(user);
                 form1.Show();
             }
+        }
+
+        private void bookingEstonia_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingEstonia();
+        }
+
+        private void Tallin_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingTallin();
+        }
+
+        private void Tartu_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingTartu();
+        }
+
+        private void Parnu_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingParnu();
+        }
+
+        private void Narwa_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingNarwa();
+        }
+
+        private void Wyspa_Saaremaa_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingWyspaSaaremaa();
         }
     }
 }
