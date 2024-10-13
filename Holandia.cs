@@ -152,5 +152,47 @@ namespace EuroExplorer
                 form1.Show();
             }
         }
+
+        private void bookingHolandia_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingHolandia();
+        }
+
+        private void Amsterdam_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingAmsterdam();
+        }
+
+        private void Rotterdam_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingRotterdam();
+        }
+
+        private void Haga_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingHaga();
+        }
+
+        private void Utrecht_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingUtrecht();
+        }
+
+        private void Maastricht_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingMaastricht();
+        }
     }
 }

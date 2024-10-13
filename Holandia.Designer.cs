@@ -37,6 +37,18 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             OpisHolandia = new TextBox();
+            Maastricht_booking = new LinkLabel();
+            Utrecht_booking = new LinkLabel();
+            Haga_booking = new LinkLabel();
+            Rotterdam_booking = new LinkLabel();
+            label8 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            Amsterdam_booking = new LinkLabel();
+            bookingHolandia = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -133,6 +145,153 @@
             OpisHolandia.TabIndex = 80;
             OpisHolandia.Text = resources.GetString("OpisHolandia.Text");
             // 
+            // Maastricht_booking
+            // 
+            Maastricht_booking.AutoSize = true;
+            Maastricht_booking.BackColor = Color.White;
+            Maastricht_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Maastricht_booking.Location = new Point(1492, 800);
+            Maastricht_booking.Name = "Maastricht_booking";
+            Maastricht_booking.Size = new Size(117, 30);
+            Maastricht_booking.TabIndex = 123;
+            Maastricht_booking.TabStop = true;
+            Maastricht_booking.Text = "Maastricht";
+            Maastricht_booking.LinkClicked += Maastricht_booking_LinkClicked;
+            // 
+            // Utrecht_booking
+            // 
+            Utrecht_booking.AutoSize = true;
+            Utrecht_booking.BackColor = Color.White;
+            Utrecht_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Utrecht_booking.Location = new Point(1491, 753);
+            Utrecht_booking.Name = "Utrecht_booking";
+            Utrecht_booking.Size = new Size(86, 30);
+            Utrecht_booking.TabIndex = 122;
+            Utrecht_booking.TabStop = true;
+            Utrecht_booking.Text = "Utrecht";
+            Utrecht_booking.LinkClicked += Utrecht_booking_LinkClicked;
+            // 
+            // Haga_booking
+            // 
+            Haga_booking.AutoSize = true;
+            Haga_booking.BackColor = Color.White;
+            Haga_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Haga_booking.Location = new Point(1491, 703);
+            Haga_booking.Name = "Haga_booking";
+            Haga_booking.Size = new Size(64, 30);
+            Haga_booking.TabIndex = 121;
+            Haga_booking.TabStop = true;
+            Haga_booking.Text = "Haga";
+            Haga_booking.LinkClicked += Haga_booking_LinkClicked;
+            // 
+            // Rotterdam_booking
+            // 
+            Rotterdam_booking.AutoSize = true;
+            Rotterdam_booking.BackColor = Color.White;
+            Rotterdam_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Rotterdam_booking.Location = new Point(1492, 657);
+            Rotterdam_booking.Name = "Rotterdam_booking";
+            Rotterdam_booking.Size = new Size(117, 30);
+            Rotterdam_booking.TabIndex = 120;
+            Rotterdam_booking.TabStop = true;
+            Rotterdam_booking.Text = "Rotterdam";
+            Rotterdam_booking.LinkClicked += Rotterdam_booking_LinkClicked;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label8.ForeColor = SystemColors.Menu;
+            label8.Location = new Point(1429, 798);
+            label8.Name = "label8";
+            label8.Size = new Size(35, 32);
+            label8.TabIndex = 119;
+            label8.Text = "5.";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label6.ForeColor = SystemColors.Menu;
+            label6.Location = new Point(1429, 751);
+            label6.Name = "label6";
+            label6.Size = new Size(35, 32);
+            label6.TabIndex = 118;
+            label6.Text = "4.";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label7.ForeColor = SystemColors.Menu;
+            label7.Location = new Point(1429, 701);
+            label7.Name = "label7";
+            label7.Size = new Size(35, 32);
+            label7.TabIndex = 117;
+            label7.Text = "3.";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label5.ForeColor = SystemColors.Menu;
+            label5.Location = new Point(1429, 655);
+            label5.Name = "label5";
+            label5.Size = new Size(35, 32);
+            label5.TabIndex = 116;
+            label5.Text = "2.";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label4.ForeColor = SystemColors.Menu;
+            label4.Location = new Point(1429, 605);
+            label4.Name = "label4";
+            label4.Size = new Size(35, 32);
+            label4.TabIndex = 115;
+            label4.Text = "1.";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label3.ForeColor = SystemColors.Menu;
+            label3.Location = new Point(1429, 523);
+            label3.Name = "label3";
+            label3.Size = new Size(389, 64);
+            label3.TabIndex = 114;
+            label3.Text = "Lista Top 5 odwiedzanych miast, \r\nzobacz noclegi:";
+            // 
+            // Amsterdam_booking
+            // 
+            Amsterdam_booking.AutoSize = true;
+            Amsterdam_booking.BackColor = Color.White;
+            Amsterdam_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Amsterdam_booking.Location = new Point(1492, 607);
+            Amsterdam_booking.Name = "Amsterdam_booking";
+            Amsterdam_booking.Size = new Size(126, 30);
+            Amsterdam_booking.TabIndex = 113;
+            Amsterdam_booking.TabStop = true;
+            Amsterdam_booking.Text = "Amsterdam";
+            Amsterdam_booking.LinkClicked += Amsterdam_booking_LinkClicked;
+            // 
+            // bookingHolandia
+            // 
+            bookingHolandia.Location = new Point(1080, 625);
+            bookingHolandia.Name = "bookingHolandia";
+            bookingHolandia.Size = new Size(169, 62);
+            bookingHolandia.TabIndex = 124;
+            bookingHolandia.Text = "Noclegi cała Holandia";
+            bookingHolandia.UseVisualStyleBackColor = true;
+            bookingHolandia.Click += bookingHolandia_Click;
+            // 
             // Holandia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -141,6 +300,18 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(bookingHolandia);
+            Controls.Add(Maastricht_booking);
+            Controls.Add(Utrecht_booking);
+            Controls.Add(Haga_booking);
+            Controls.Add(Rotterdam_booking);
+            Controls.Add(label8);
+            Controls.Add(label6);
+            Controls.Add(label7);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(Amsterdam_booking);
             Controls.Add(Back);
             Controls.Add(Opis);
             Controls.Add(InfoHolandia1);
@@ -167,5 +338,17 @@
         private Label label1;
         private PictureBox pictureBox1;
         protected TextBox OpisHolandia;
+        private LinkLabel Maastricht_booking;
+        private LinkLabel Utrecht_booking;
+        private LinkLabel Haga_booking;
+        private LinkLabel Rotterdam_booking;
+        private Label label8;
+        private Label label6;
+        private Label label7;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private LinkLabel Amsterdam_booking;
+        private Button bookingHolandia;
     }
 }

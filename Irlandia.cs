@@ -96,7 +96,7 @@ namespace EuroExplorer
 
                         TimeZoneInfo dublinTimeZone = TimeZoneInfo.FindSystemTimeZoneById("GMT Standard Time");
 
-                        
+
                         DateTime dublinTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, dublinTimeZone);
 
                         InfoIrlandia.Text = $"Aktualna godzina w Dublin: {dublinTime.ToString("HH:mm:ss")}";
@@ -161,6 +161,48 @@ namespace EuroExplorer
         private void Irlandia_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bookingIrlandia_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingIrlandia();
+        }
+
+        private void Dublin_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingDublin();
+        }
+
+        private void Galway_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingGalway();
+        }
+
+        private void Cork_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingCork();
+        }
+
+        private void Limerick_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingLimerick();
+        }
+
+        private void Kilkenny_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingKilkenny();
         }
     }
 }

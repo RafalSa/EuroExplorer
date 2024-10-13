@@ -37,6 +37,18 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             OpisIrlandia = new TextBox();
+            Kilkenny_booking = new LinkLabel();
+            Limerick_booking = new LinkLabel();
+            Cork_booking = new LinkLabel();
+            Galway_booking = new LinkLabel();
+            label8 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            Dublin_booking = new LinkLabel();
+            bookingIrlandia = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -133,6 +145,153 @@
             OpisIrlandia.TabIndex = 88;
             OpisIrlandia.Text = resources.GetString("OpisIrlandia.Text");
             // 
+            // Kilkenny_booking
+            // 
+            Kilkenny_booking.AutoSize = true;
+            Kilkenny_booking.BackColor = Color.White;
+            Kilkenny_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Kilkenny_booking.Location = new Point(1492, 800);
+            Kilkenny_booking.Name = "Kilkenny_booking";
+            Kilkenny_booking.Size = new Size(99, 30);
+            Kilkenny_booking.TabIndex = 134;
+            Kilkenny_booking.TabStop = true;
+            Kilkenny_booking.Text = "Kilkenny";
+            Kilkenny_booking.LinkClicked += Kilkenny_booking_LinkClicked;
+            // 
+            // Limerick_booking
+            // 
+            Limerick_booking.AutoSize = true;
+            Limerick_booking.BackColor = Color.White;
+            Limerick_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Limerick_booking.Location = new Point(1491, 753);
+            Limerick_booking.Name = "Limerick_booking";
+            Limerick_booking.Size = new Size(96, 30);
+            Limerick_booking.TabIndex = 133;
+            Limerick_booking.TabStop = true;
+            Limerick_booking.Text = "Limerick";
+            Limerick_booking.LinkClicked += Limerick_booking_LinkClicked;
+            // 
+            // Cork_booking
+            // 
+            Cork_booking.AutoSize = true;
+            Cork_booking.BackColor = Color.White;
+            Cork_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Cork_booking.Location = new Point(1491, 703);
+            Cork_booking.Name = "Cork_booking";
+            Cork_booking.Size = new Size(59, 30);
+            Cork_booking.TabIndex = 132;
+            Cork_booking.TabStop = true;
+            Cork_booking.Text = "Cork";
+            Cork_booking.LinkClicked += Cork_booking_LinkClicked;
+            // 
+            // Galway_booking
+            // 
+            Galway_booking.AutoSize = true;
+            Galway_booking.BackColor = Color.White;
+            Galway_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Galway_booking.Location = new Point(1492, 657);
+            Galway_booking.Name = "Galway_booking";
+            Galway_booking.Size = new Size(84, 30);
+            Galway_booking.TabIndex = 131;
+            Galway_booking.TabStop = true;
+            Galway_booking.Text = "Galway";
+            Galway_booking.LinkClicked += Galway_booking_LinkClicked;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label8.ForeColor = SystemColors.Menu;
+            label8.Location = new Point(1429, 798);
+            label8.Name = "label8";
+            label8.Size = new Size(35, 32);
+            label8.TabIndex = 130;
+            label8.Text = "5.";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label6.ForeColor = SystemColors.Menu;
+            label6.Location = new Point(1429, 751);
+            label6.Name = "label6";
+            label6.Size = new Size(35, 32);
+            label6.TabIndex = 129;
+            label6.Text = "4.";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label7.ForeColor = SystemColors.Menu;
+            label7.Location = new Point(1429, 701);
+            label7.Name = "label7";
+            label7.Size = new Size(35, 32);
+            label7.TabIndex = 128;
+            label7.Text = "3.";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label5.ForeColor = SystemColors.Menu;
+            label5.Location = new Point(1429, 655);
+            label5.Name = "label5";
+            label5.Size = new Size(35, 32);
+            label5.TabIndex = 127;
+            label5.Text = "2.";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label4.ForeColor = SystemColors.Menu;
+            label4.Location = new Point(1429, 605);
+            label4.Name = "label4";
+            label4.Size = new Size(35, 32);
+            label4.TabIndex = 126;
+            label4.Text = "1.";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label3.ForeColor = SystemColors.Menu;
+            label3.Location = new Point(1429, 523);
+            label3.Name = "label3";
+            label3.Size = new Size(389, 64);
+            label3.TabIndex = 125;
+            label3.Text = "Lista Top 5 odwiedzanych miast, \r\nzobacz noclegi:";
+            // 
+            // Dublin_booking
+            // 
+            Dublin_booking.AutoSize = true;
+            Dublin_booking.BackColor = Color.White;
+            Dublin_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Dublin_booking.Location = new Point(1492, 607);
+            Dublin_booking.Name = "Dublin_booking";
+            Dublin_booking.Size = new Size(79, 30);
+            Dublin_booking.TabIndex = 124;
+            Dublin_booking.TabStop = true;
+            Dublin_booking.Text = "Dublin";
+            Dublin_booking.LinkClicked += Dublin_booking_LinkClicked;
+            // 
+            // bookingIrlandia
+            // 
+            bookingIrlandia.Location = new Point(1080, 625);
+            bookingIrlandia.Name = "bookingIrlandia";
+            bookingIrlandia.Size = new Size(169, 62);
+            bookingIrlandia.TabIndex = 135;
+            bookingIrlandia.Text = "Noclegi cała Irlandia";
+            bookingIrlandia.UseVisualStyleBackColor = true;
+            bookingIrlandia.Click += bookingIrlandia_Click;
+            // 
             // Irlandia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -141,6 +300,18 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(bookingIrlandia);
+            Controls.Add(Kilkenny_booking);
+            Controls.Add(Limerick_booking);
+            Controls.Add(Cork_booking);
+            Controls.Add(Galway_booking);
+            Controls.Add(label8);
+            Controls.Add(label6);
+            Controls.Add(label7);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(Dublin_booking);
             Controls.Add(Back);
             Controls.Add(Opis);
             Controls.Add(InfoIrlandia1);
@@ -168,5 +339,17 @@
         private Label label1;
         private PictureBox pictureBox1;
         protected TextBox OpisIrlandia;
+        private LinkLabel Kilkenny_booking;
+        private LinkLabel Limerick_booking;
+        private LinkLabel Cork_booking;
+        private LinkLabel Galway_booking;
+        private Label label8;
+        private Label label6;
+        private Label label7;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private LinkLabel Dublin_booking;
+        private Button bookingIrlandia;
     }
 }
