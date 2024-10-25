@@ -3,8 +3,7 @@
 2. [Instalacja](#instalacja)
 3. [Licencja](#licencja)
 4. [Kontakt](#kontakt)
-5. [Kolaboracja](#kolaboracja)
-6. [Podsumowanie](#podsumowanie)
+5. [Podsumowanie](#podsumowanie)
 
 
 # Nazwa oraz opis projektu
@@ -50,12 +49,6 @@ Autor: Rafał Sak
 Email: rafalsak@op.pl
 
 GitHub: https://github.com/RafalSa
-
-## Kolaboracja
-
-Alan Pudełko
-
-Igor Radziszewski
 
 ## Podsumowanie
 ## Koncept
