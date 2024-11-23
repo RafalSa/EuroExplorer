@@ -152,5 +152,52 @@ namespace EuroExplorer
                 form1.Show();
             }
         }
+
+        private void bookingMalta_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingMalta();
+        }
+
+        private void Valletta_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingValletta();
+        }
+
+        private void Mdina_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingMdina();
+        }
+
+        private void Sliema_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingSliema();
+        }
+
+        private void Gozo_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingGozo();
+        }
+
+        private void Marsaxlokk_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingMarsaxlokk();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

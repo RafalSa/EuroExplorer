@@ -310,7 +310,7 @@ namespace EuroExplorer
 
         private void CountryN_Click(object sender, EventArgs e)
         {
-            FormW f42 = new FormW(loggedInUser);
+            FormN f42 = new FormN(loggedInUser);
             f42.Show();
             this.WindowState = FormWindowState.Minimized;
         }

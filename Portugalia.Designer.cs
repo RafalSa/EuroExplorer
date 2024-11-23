@@ -37,6 +37,18 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             OpisPortugalia = new TextBox();
+            Sintra_booking = new LinkLabel();
+            Albufeira_booking = new LinkLabel();
+            Funchal_booking = new LinkLabel();
+            Porto_booking = new LinkLabel();
+            label8 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            Lizbona_booking = new LinkLabel();
+            bookingPortugalia = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -133,6 +145,153 @@
             OpisPortugalia.TabIndex = 136;
             OpisPortugalia.Text = resources.GetString("OpisPortugalia.Text");
             // 
+            // Sintra_booking
+            // 
+            Sintra_booking.AutoSize = true;
+            Sintra_booking.BackColor = Color.White;
+            Sintra_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Sintra_booking.Location = new Point(1492, 801);
+            Sintra_booking.Name = "Sintra_booking";
+            Sintra_booking.Size = new Size(71, 30);
+            Sintra_booking.TabIndex = 202;
+            Sintra_booking.TabStop = true;
+            Sintra_booking.Text = "Sintra";
+            Sintra_booking.LinkClicked += Sintra_booking_LinkClicked;
+            // 
+            // Albufeira_booking
+            // 
+            Albufeira_booking.AutoSize = true;
+            Albufeira_booking.BackColor = Color.White;
+            Albufeira_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Albufeira_booking.Location = new Point(1491, 754);
+            Albufeira_booking.Name = "Albufeira_booking";
+            Albufeira_booking.Size = new Size(104, 30);
+            Albufeira_booking.TabIndex = 201;
+            Albufeira_booking.TabStop = true;
+            Albufeira_booking.Text = "Albufeira";
+            Albufeira_booking.LinkClicked += Albufeira_booking_LinkClicked;
+            // 
+            // Funchal_booking
+            // 
+            Funchal_booking.AutoSize = true;
+            Funchal_booking.BackColor = Color.White;
+            Funchal_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Funchal_booking.Location = new Point(1491, 704);
+            Funchal_booking.Name = "Funchal_booking";
+            Funchal_booking.Size = new Size(90, 30);
+            Funchal_booking.TabIndex = 200;
+            Funchal_booking.TabStop = true;
+            Funchal_booking.Text = "Funchal";
+            Funchal_booking.LinkClicked += Funchal_booking_LinkClicked;
+            // 
+            // Porto_booking
+            // 
+            Porto_booking.AutoSize = true;
+            Porto_booking.BackColor = Color.White;
+            Porto_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Porto_booking.Location = new Point(1492, 658);
+            Porto_booking.Name = "Porto_booking";
+            Porto_booking.Size = new Size(68, 30);
+            Porto_booking.TabIndex = 199;
+            Porto_booking.TabStop = true;
+            Porto_booking.Text = "Porto";
+            Porto_booking.LinkClicked += Porto_booking_LinkClicked;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label8.ForeColor = SystemColors.Menu;
+            label8.Location = new Point(1429, 799);
+            label8.Name = "label8";
+            label8.Size = new Size(35, 32);
+            label8.TabIndex = 198;
+            label8.Text = "5.";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label6.ForeColor = SystemColors.Menu;
+            label6.Location = new Point(1429, 752);
+            label6.Name = "label6";
+            label6.Size = new Size(35, 32);
+            label6.TabIndex = 197;
+            label6.Text = "4.";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label7.ForeColor = SystemColors.Menu;
+            label7.Location = new Point(1429, 702);
+            label7.Name = "label7";
+            label7.Size = new Size(35, 32);
+            label7.TabIndex = 196;
+            label7.Text = "3.";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label5.ForeColor = SystemColors.Menu;
+            label5.Location = new Point(1429, 656);
+            label5.Name = "label5";
+            label5.Size = new Size(35, 32);
+            label5.TabIndex = 195;
+            label5.Text = "2.";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label4.ForeColor = SystemColors.Menu;
+            label4.Location = new Point(1429, 606);
+            label4.Name = "label4";
+            label4.Size = new Size(35, 32);
+            label4.TabIndex = 194;
+            label4.Text = "1.";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label3.ForeColor = SystemColors.Menu;
+            label3.Location = new Point(1429, 524);
+            label3.Name = "label3";
+            label3.Size = new Size(389, 64);
+            label3.TabIndex = 193;
+            label3.Text = "Lista Top 5 odwiedzanych miast, \r\nzobacz noclegi:";
+            // 
+            // Lizbona_booking
+            // 
+            Lizbona_booking.AutoSize = true;
+            Lizbona_booking.BackColor = Color.White;
+            Lizbona_booking.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            Lizbona_booking.Location = new Point(1492, 608);
+            Lizbona_booking.Name = "Lizbona_booking";
+            Lizbona_booking.Size = new Size(90, 30);
+            Lizbona_booking.TabIndex = 192;
+            Lizbona_booking.TabStop = true;
+            Lizbona_booking.Text = "Lizbona";
+            Lizbona_booking.LinkClicked += Lizbona_booking_LinkClicked;
+            // 
+            // bookingPortugalia
+            // 
+            bookingPortugalia.Location = new Point(1080, 626);
+            bookingPortugalia.Name = "bookingPortugalia";
+            bookingPortugalia.Size = new Size(169, 62);
+            bookingPortugalia.TabIndex = 203;
+            bookingPortugalia.Text = "Noclegi cała Portugalia";
+            bookingPortugalia.UseVisualStyleBackColor = true;
+            bookingPortugalia.Click += bookingPortugalia_Click;
+            // 
             // Portugalia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -141,6 +300,18 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(bookingPortugalia);
+            Controls.Add(Sintra_booking);
+            Controls.Add(Albufeira_booking);
+            Controls.Add(Funchal_booking);
+            Controls.Add(Porto_booking);
+            Controls.Add(label8);
+            Controls.Add(label6);
+            Controls.Add(label7);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(Lizbona_booking);
             Controls.Add(Back);
             Controls.Add(Opis);
             Controls.Add(InfoPortugalia1);
@@ -167,5 +338,17 @@
         private Label label1;
         private PictureBox pictureBox1;
         protected TextBox OpisPortugalia;
+        private LinkLabel Sintra_booking;
+        private LinkLabel Albufeira_booking;
+        private LinkLabel Funchal_booking;
+        private LinkLabel Porto_booking;
+        private Label label8;
+        private Label label6;
+        private Label label7;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private LinkLabel Lizbona_booking;
+        private Button bookingPortugalia;
     }
 }

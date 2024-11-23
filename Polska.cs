@@ -152,5 +152,54 @@ namespace EuroExplorer
                 form1.Show();
             }
         }
+
+        private void Warszawa_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingWarszawa();
+        }
+
+        private void Krakow_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingKrakow();
+
+        }
+
+        private void Wroclaw_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingWroclaw();
+
+        }
+
+        private void Gdansk_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingGdansk();
+        }
+
+        private void Zakopane_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingZakopane();
+        }
+
+        private void bookingPolska_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingPolska();
+        }
+
+        private void Polska_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -152,5 +152,47 @@ namespace EuroExplorer
                 form1.Show();
             }
         }
+
+        private void Berlin_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingBerlin();
+        }
+
+        private void Monachium_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingMonachium();
+        }
+
+        private void Hafenstadt_Hamburg_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingHafenstadtHamburg();
+        }
+
+        private void Kolonia_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingKolonia();
+        }
+
+        private void Drezno_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingDrezno();
+        }
+
+        private void bookingNiemcy_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingNiemcy();
+        }
     }
 }

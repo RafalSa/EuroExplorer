@@ -152,5 +152,49 @@ namespace EuroExplorer
                 form1.Show();
             }
         }
+
+        private void Lizbona_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingLizbona();
+        }
+
+        private void Porto_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingPorto();
+        }
+
+        private void Funchal_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingFunchal();
+
+        }
+
+        private void Albufeira_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingAlbufeira();
+
+        }
+
+        private void Sintra_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingSintra();
+        }
+
+        private void bookingPortugalia_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingPortugalia();
+        }
     }
 }
