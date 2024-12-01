@@ -152,5 +152,52 @@ namespace EuroExplorer
                 form1.Show();
             }
         }
+
+        private void Bratysława_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingBratysława();
+        }
+
+        private void Tatry_Wysokie_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingTatryWysokie();
+        }
+
+        private void Koszyce_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingKoszyce();
+        }
+
+        private void Zamek_Spiski_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingZamekSpiski();
+        }
+
+        private void Banska_Szczawnica_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingBanskaSzczawnica();
+        }
+
+        private void bookingSlowacja_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingSlowacja();
+        }
+
+        private void Słowacja_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
