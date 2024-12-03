@@ -96,7 +96,7 @@ namespace EuroExplorer
 
                         TimeZoneInfo romeTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time");
 
-                        
+
                         DateTime romeTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, romeTimeZone);
 
                         InfoWłochy.Text = $"Aktualna godzina w Rome: {romeTime.ToString("HH:mm:ss")}";
@@ -154,6 +154,48 @@ namespace EuroExplorer
                 Form1 form1 = new Form1(user);
                 form1.Show();
             }
+        }
+
+        private void Rzym_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingRzym();
+        }
+
+        private void Wenecja_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingWenecja();
+        }
+
+        private void Florencja_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingFlorencja();
+        }
+
+        private void Neapol_i_Pompeje_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingNeapoliPompeje();
+        }
+
+        private void Jezioro_Garda_booking_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingJezioroGarda();
+        }
+
+        private void bookingWlochy_Click(object sender, EventArgs e)
+        {
+            Menu1 menu1 = new Menu1(user);
+            menu1.Show();
+            menu1.NavigateToBookingWlochy();
         }
     }
 }

@@ -3396,5 +3396,269 @@ namespace EuroExplorer
 
 
         }
+
+        public async void NavigateToBookingBudapeszt()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/hu/budapest.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingDebreczyn()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/hu/debrecen.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingSzeged()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/hu/szeged.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingBalaton()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/searchresults.pl.html?ss=Jezioro+Balaton");
+
+
+        }
+
+        public async void NavigateToBookingEger()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/hu/eger.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingWegry()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/country/hu.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingRzym()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/it/rome.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingWenecja()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/it/venice.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingFlorencja()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/it/florence.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingNeapoliPompeje()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/city/it/naples.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingJezioroGarda()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/region/it/lake-garda.pl.html");
+
+
+        }
+
+        public async void NavigateToBookingWlochy()
+        {
+            if (webView21.CoreWebView2 == null)
+            {
+                // Spróbuj zainicjalizować WebView2, jeśli jeszcze nie zostało zainicjalizowane
+                try
+                {
+                    await webView21.EnsureCoreWebView2Async(null);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error initializing WebView2: {ex.Message}");
+                    return;
+                }
+            }
+
+            // Teraz wykonaj nawigację, gdy WebView2 jest gotowe
+            webView21.CoreWebView2.Navigate("https://www.booking.com/country/it.pl.html");
+
+
+        }
     }
 }
