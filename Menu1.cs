@@ -49,12 +49,12 @@ namespace EuroExplorer
 
         private void Map_Click(object sender, EventArgs e)
         {
- 
+
         }
 
         private void Czat_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void webView21_Click(object sender, EventArgs e)
@@ -3659,6 +3659,13 @@ namespace EuroExplorer
             webView21.CoreWebView2.Navigate("https://www.booking.com/country/it.pl.html");
 
 
+        }
+
+        private void Profil_Click(object sender, EventArgs e)
+        {
+            EditProfile f32 = new EditProfile(loggedInUser);
+            f32.Show();
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

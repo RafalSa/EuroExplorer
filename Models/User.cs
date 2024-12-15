@@ -2,6 +2,8 @@
 
 namespace EuroExplorer.Models
 {
+
+
     public interface IUser
     {
         int Id { get; set; }
@@ -32,6 +34,7 @@ namespace EuroExplorer.Models
         public List<string> SearchHistory { get; set; }
         public List<string> HomeLocation { get; set; }
         public string Country { get; set; }
+        public string ProfilePicturePath { get; set; }
 
         public void AddToSearchHistory(string searchTerm)
         {

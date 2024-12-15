@@ -37,6 +37,7 @@
             ListaPanstw = new Button();
             ListaPanel = new Button();
             webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            Profil = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
@@ -44,6 +45,7 @@
             // panel1
             // 
             panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(Profil);
             panel1.Controls.Add(BNB);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(Czat);
@@ -127,7 +129,17 @@
             webView21.Size = new Size(1685, 984);
             webView21.TabIndex = 2;
             webView21.ZoomFactor = 1D;
-            webView21.Click += webView21_Click_1;
+            // 
+            // Profil
+            // 
+            Profil.BackgroundImage = (Image)resources.GetObject("Profil.BackgroundImage");
+            Profil.BackgroundImageLayout = ImageLayout.Stretch;
+            Profil.Location = new Point(149, 17);
+            Profil.Name = "Profil";
+            Profil.Size = new Size(39, 31);
+            Profil.TabIndex = 7;
+            Profil.UseVisualStyleBackColor = true;
+            Profil.Click += Profil_Click;
             // 
             // Menu1
             // 
@@ -154,5 +166,6 @@
         private Button button1;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
         private Button BNB;
+        private Button Profil;
     }
 }
