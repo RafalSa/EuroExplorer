@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu1));
             panel1 = new Panel();
+            Profil = new Button();
             BNB = new Button();
             button1 = new Button();
             Czat = new Button();
@@ -37,7 +38,6 @@
             ListaPanstw = new Button();
             ListaPanel = new Button();
             webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
-            Profil = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
@@ -56,6 +56,17 @@
             panel1.Size = new Size(206, 1048);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // Profil
+            // 
+            Profil.BackgroundImage = (Image)resources.GetObject("Profil.BackgroundImage");
+            Profil.BackgroundImageLayout = ImageLayout.Stretch;
+            Profil.Location = new Point(149, 17);
+            Profil.Name = "Profil";
+            Profil.Size = new Size(39, 31);
+            Profil.TabIndex = 7;
+            Profil.UseVisualStyleBackColor = true;
+            Profil.Click += Profil_Click;
             // 
             // BNB
             // 
@@ -109,6 +120,7 @@
             // 
             // ListaPanel
             // 
+
             ListaPanel.BackColor = Color.Transparent;
             ListaPanel.BackgroundImage = (Image)resources.GetObject("ListaPanel.BackgroundImage");
             ListaPanel.BackgroundImageLayout = ImageLayout.Stretch;
@@ -129,17 +141,6 @@
             webView21.Size = new Size(1685, 984);
             webView21.TabIndex = 2;
             webView21.ZoomFactor = 1D;
-            // 
-            // Profil
-            // 
-            Profil.BackgroundImage = (Image)resources.GetObject("Profil.BackgroundImage");
-            Profil.BackgroundImageLayout = ImageLayout.Stretch;
-            Profil.Location = new Point(149, 17);
-            Profil.Name = "Profil";
-            Profil.Size = new Size(39, 31);
-            Profil.TabIndex = 7;
-            Profil.UseVisualStyleBackColor = true;
-            Profil.Click += Profil_Click;
             // 
             // Menu1
             // 

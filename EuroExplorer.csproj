@@ -27,6 +27,7 @@
 		<PackageReference Include="AjaxMin" Version="5.14.5506.26202" />
 		<PackageReference Include="GMap.NET.Core" Version="2.1.7" />
 		<PackageReference Include="GMap.NET.WinForms" Version="2.1.7" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2592.51" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
