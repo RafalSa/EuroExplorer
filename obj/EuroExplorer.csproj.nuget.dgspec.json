@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafal\\source\\repos\\projektObiektowe13\\EuroExplorer.csproj": {}
+    "C:\\Users\\rafal\\Source\\Repos\\EuroExplorer1\\EuroExplorer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafal\\source\\repos\\projektObiektowe13\\EuroExplorer.csproj": {
+    "C:\\Users\\rafal\\Source\\Repos\\EuroExplorer1\\EuroExplorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafal\\source\\repos\\projektObiektowe13\\EuroExplorer.csproj",
+        "projectUniqueName": "C:\\Users\\rafal\\Source\\Repos\\EuroExplorer1\\EuroExplorer.csproj",
         "projectName": "EuroExplorer",
-        "projectPath": "C:\\Users\\rafal\\source\\repos\\projektObiektowe13\\EuroExplorer.csproj",
+        "projectPath": "C:\\Users\\rafal\\Source\\Repos\\EuroExplorer1\\EuroExplorer.csproj",
         "packagesPath": "C:\\Users\\rafal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafal\\source\\repos\\projektObiektowe13\\obj\\",
+        "outputPath": "C:\\Users\\rafal\\Source\\Repos\\EuroExplorer1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

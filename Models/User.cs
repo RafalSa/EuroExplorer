@@ -57,6 +57,12 @@ namespace EuroExplorer.Models
         {
             HomeLocation?.Remove(location);
         }
+        
 
     }
+    public static class CurrentUser
+    {
+        public static User LoggedInUser { get; set; }
+    }
+
 }

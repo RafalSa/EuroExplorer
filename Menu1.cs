@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2.Core;
+using EuroExplorer.Models;
+
 
 namespace EuroExplorer
 {
@@ -13,9 +16,11 @@ namespace EuroExplorer
             InitializeComponent();
             this.loggedInUser = loggedInUser;
 
-
+            ChatDatabase.InitializeDatabase();
+            ChatDatabase.EnsureDatabaseExists();
             InitializeWebView2Async();
         }
+
 
         private async void InitializeWebView2Async()
         {
@@ -54,6 +59,9 @@ namespace EuroExplorer
 
         private string GenerateChatHtml(string username, string avatarPath)
         {
+            // Jeśli avatarPath jest ścieżką lokalną, spróbuj przekazać względną ścieżkę, aby była dostępna w HTML
+            string relativeAvatarPath = Path.Combine("ProfilePicturePath", Path.GetFileName(avatarPath));
+
             // Pobierz wszystkie wiadomości z bazy danych
             var messages = ChatDatabase.GetMessages();
 
@@ -61,9 +69,11 @@ namespace EuroExplorer
             string messagesHtml = string.Empty;
             foreach (var message in messages)
             {
+                string messageAvatarPath = string.IsNullOrEmpty(message.AvatarPath) ? "default-avatar.jpg" : Path.Combine("ProfilePictures", Path.GetFileName(message.AvatarPath));
+
                 messagesHtml += $@"
         <div class='message'>
-            <img src='{message.AvatarPath}' class='avatar' alt='Avatar'>
+            <img src='{messageAvatarPath}' class='avatar' alt='Avatar'>
             <div class='content'>
                 <div class='username'>{message.Username}</div>
                 <div class='text'>{message.Message}</div>
@@ -164,7 +174,7 @@ namespace EuroExplorer
                 const messageElement = document.createElement('div');
                 messageElement.className = 'message';
                 messageElement.innerHTML = `
-                    <img src='{avatarPath}' class='avatar' alt='Avatar'>
+                    <img src='{relativeAvatarPath}' class='avatar' alt='Avatar'>
                     <div class='content'>
                         <div class='username'>{username}</div>
                         <div class='text'>${{text}}</div>
@@ -181,6 +191,9 @@ namespace EuroExplorer
     </body>
     </html>";
         }
+
+
+
 
 
 
@@ -3800,14 +3813,8 @@ namespace EuroExplorer
 
         private void Czat_Click(object sender, EventArgs e)
         {
-            // Pobierz wszystkich użytkowników
-            var users = UserUtils.LoadUsers();
-
-            // Id aktualnie zalogowanego użytkownika
-            int currentUserId = 2; // Na tym etapie zakładam, że mamy ID zalogowanego użytkownika
-
-            // Znajdź dane zalogowanego użytkownika
-            var currentUser = users.Find(user => user.Id == currentUserId);
+            // Pobierz zalogowanego użytkownika
+            var currentUser = CurrentUser.LoggedInUser;
 
             if (currentUser == null)
             {
@@ -3815,8 +3822,11 @@ namespace EuroExplorer
                 return;
             }
 
-            // Ścieżka do avatara i nazwa użytkownika
-            string avatarPath = currentUser.ProfilePicturePath.Replace(@"\", "/");
+            // Sprawdź, czy ścieżka do avatara jest null
+            string avatarPath = currentUser.ProfilePicturePath != null
+                ? currentUser.ProfilePicturePath.Replace(@"\", "/")
+                : "domyślny/ścieżka/avatara.png"; // Ścieżka do domyślnego avatara
+
             string username = currentUser.Username;
 
             // Wygenerowanie HTML czatu
@@ -3829,7 +3839,6 @@ namespace EuroExplorer
             // Załaduj plik HTML do kontrolki WebView2
             webView21.Source = new Uri($"file:///{tempHtmlPath}");
         }
-
 
     }
 }

@@ -8,24 +8,42 @@ public static class ChatDatabase
     private static string connectionString = "Data Source=chat.db;Version=3;";
 
     // Inicjalizacja bazy danych i tworzenie tabeli, jeśli nie istnieje
-    public static void Initialize()
+    public static void InitializeDatabase()
     {
+        string createTableQuery = @"
+    CREATE TABLE IF NOT EXISTS Messages (
+        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+        Username TEXT NOT NULL,
+        AvatarPath TEXT,
+        Message TEXT NOT NULL,
+        Timestamp DATETIME NOT NULL
+    )";
+
         using (var connection = new SQLiteConnection(connectionString))
         {
             connection.Open();
-
-            string createTableQuery = @"
-            CREATE TABLE IF NOT EXISTS Messages (
-                Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                Username TEXT NOT NULL,
-                AvatarPath TEXT NOT NULL,
-                Message TEXT NOT NULL,
-                Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
-            )";
             using (var command = new SQLiteCommand(createTableQuery, connection))
             {
+                Console.WriteLine("Sprawdzanie istnienia tabeli Messages...");
                 command.ExecuteNonQuery();
+                Console.WriteLine("Tabela Messages została utworzona lub już istnieje.");
             }
+        }
+    }
+
+
+    public static void EnsureDatabaseExists()
+    {
+        string dbPath = "chat.db";
+        Console.WriteLine($"Sprawdzam istnienie bazy danych: {dbPath}");
+        if (!File.Exists(dbPath))
+        {
+            Console.WriteLine("Baza danych nie istnieje. Tworzenie nowej bazy...");
+            InitializeDatabase();
+        }
+        else
+        {
+            Console.WriteLine("Baza danych istnieje.");
         }
     }
 
@@ -48,6 +66,7 @@ public static class ChatDatabase
             }
         }
     }
+
 
     // Metoda do pobierania wiadomości z bazy danych
     public static List<(string Username, string AvatarPath, string Message, DateTime Timestamp)> GetMessages()
@@ -74,6 +93,7 @@ public static class ChatDatabase
         }
         return messages;
     }
+
 
     // Nowa metoda do zapisania wiadomości
 }
