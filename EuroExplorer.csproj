@@ -27,9 +27,19 @@
 		<PackageReference Include="AjaxMin" Version="5.14.5506.26202" />
 		<PackageReference Include="GMap.NET.Core" Version="2.1.7" />
 		<PackageReference Include="GMap.NET.WinForms" Version="2.1.7" />
-		<PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
-		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2592.51" />
+		<PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="Microsoft.Data.Sqlite.Core" Version="9.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.10" />
+		<PackageReference Include="Stub.System.Data.SQLite.Core.NetStandard" Version="1.0.115.5" />
+		<PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+		<PackageReference Include="System.Data.SQLite.EF6" Version="1.0.115.5" />
 	</ItemGroup>
 
 </Project>

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuroExplorer", "EuroExplorer.csproj", "{75F0397A-C9B2-4E63-A923-5757C35E2B2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuroExplorerApi", "..\EuroExplorerApi\EuroExplorerApi.csproj", "{CD13D5BA-9C4E-4EDD-80E4-9C6A16F5FA4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{75F0397A-C9B2-4E63-A923-5757C35E2B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F0397A-C9B2-4E63-A923-5757C35E2B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F0397A-C9B2-4E63-A923-5757C35E2B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD13D5BA-9C4E-4EDD-80E4-9C6A16F5FA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD13D5BA-9C4E-4EDD-80E4-9C6A16F5FA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD13D5BA-9C4E-4EDD-80E4-9C6A16F5FA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD13D5BA-9C4E-4EDD-80E4-9C6A16F5FA4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
